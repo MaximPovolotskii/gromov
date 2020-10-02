@@ -9,6 +9,10 @@ FPS = 30
 screen = pygame.display.set_mode((1200, 750))
 
 def house(x, y, size):
+    """
+    house draws a house at (x, y) coordinates
+    size adjusts the linear parameters of the image
+    """
     w = 100 * size
     rect(screen, (0, 0, 0), (int(x), int(y + w), int(w), int(w)), 2)
     rect(screen, (91, 58, 41), (int(x + 2), int(y + w) + 2, int(w - 2), int(w - 2)), 0)
